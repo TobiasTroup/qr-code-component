@@ -12,20 +12,49 @@ $font-size: 15px;
 body {
     background-color: hsl(212, 45%, 89%);
     font-family: $font-family;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .qr__code {
     &-main {
-        height: 100vh;
+        height: 80vh;
+        width: 325px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
+
+
     &-picture {
-        background-color: white;
+        background-color: hsl(0, 0%, 100%);
         border-radius: 18px;
+
         & img {
-            width: 275px;
+            width: 300px;
             height: 300px;
-            border-radius: 18px;
+            border-radius: 10px;
+        }
+
+        h4 {
+            font-family: $font-family;
+            color: hsl(218, 44%, 22%);
+            opacity: 0.95;
+            font-weight: bold;
+        }
+
+        & p {
+            font-family: $font-family;
+            color: hsl(220, 15%, 55%);
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .qr__code {
+        &-main {
+            height: 80vh;
+            width: 330px;
+            margin: 0 auto;
+            box-sizing: border-box;
         }
     }
 }
