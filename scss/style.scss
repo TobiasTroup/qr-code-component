@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+$font-family: 'Outfit', sans-serif;
+$font-size: 15px;
+
+* body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: $font-family;
+    overflow:hidden;
+}
+
+.qr__code {
+    &-main {
+        height: 100vh;
+        // background-color: white;
+    }
+    &-picture {
+        background-color: white;
+        border-radius: 18px;
+    }
+    &-picture img {
+        width: 275px;
+        height: 300px;
+        border-radius: 18px;
+    }
+}
